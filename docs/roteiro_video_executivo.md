@@ -16,7 +16,7 @@ Mensagem principal:
 
 Mensagem principal:
 
-“Hoje, os sinais mais importantes do negócio tendem a estar dispersos. Reviews, atrasos logísticos, risco de churn e esforço operacional excessivo acabam sendo tratados de forma reativa, o que reduz velocidade de resposta e compromete a experiência do cliente.”
+“A base Olist já mostra oportunidades concretas: foram observados 99 mil pedidos, com 8,1% das entregas após a data estimada. Também há 14,7% de reviews com nota 1 ou 2. Esses sinais permitem priorizar diagnóstico, mesmo antes das integrações operacionais em tempo real.”
 
 Pontos a enfatizar:
 
@@ -61,7 +61,7 @@ Mensagem principal:
 
 Mensagem principal:
 
-“Com a validação desta fase, o próximo passo é conectar os dados reais, escolher um piloto prioritário e medir impacto de forma controlada antes de escalar.”
+“Com a validação desta fase, o próximo passo é pilotar o diagnóstico de atrasos e reviews negativos usando a base disponível, medir impacto de forma controlada e integrar tracking, atendimento e CRM antes de escalar.”
 
 ## Mensagem Final
 
