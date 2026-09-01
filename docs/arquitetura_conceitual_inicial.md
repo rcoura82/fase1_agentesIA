@@ -8,19 +8,24 @@ Definir uma arquitetura inicial, de nível executivo, para organizar fontes de d
 
 ### 1. Fontes de Dados
 
+**Disponíveis no recorte Olist**
+
 - cadastro e perfil de clientes;
 - pedidos e transações;
-- eventos logísticos e tracking;
-- reviews e pesquisas de satisfação;
-- tickets e contatos de atendimento;
-- campanhas, CRM e retenção;
-- indicadores executivos e metas.
+- datas de ciclo logístico e entrega estimada;
+- reviews.
+
+**Necessárias para operação futura**
+
+- tracking, transportadoras e devoluções;
+- tickets, contatos de atendimento, NPS e pesquisas;
+- campanhas, CRM, metas e indicadores operacionais atualizados.
 
 ### 2. Camada de Tratamento e Qualidade
 
 - padronização de campos;
 - deduplicação;
-- consolidação por cliente, pedido e jornada;
+- consolidação por pedido (`order_id`) e cliente longitudinal (`customer_unique_id`);
 - checagem de completude;
 - controle de atualização.
 
@@ -75,16 +80,15 @@ flowchart LR
 ### Entradas estruturadas
 
 - pedidos;
-- status logísticos;
+- datas de entrega estimada e realizada;
 - métricas de compra;
 - segmentação de clientes;
-- histórico de campanhas.
+- histórico de compra e nota de review.
 
 ### Entradas não estruturadas
 
 - reviews;
 - comentários;
-- chamados;
 - feedback textual.
 
 ### Saídas operacionais
@@ -101,6 +105,8 @@ flowchart LR
 - tendências;
 - riscos;
 - oportunidades de melhoria.
+
+As recomendações devem informar se resultam de dado histórico disponível ou de fonte operacional ainda não integrada.
 
 ## Interações entre Agentes
 

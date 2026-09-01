@@ -18,7 +18,19 @@ O problema proposto indica um ambiente com pressão simultânea sobre:
 
 Esse cenário normalmente aponta para empresas que já possuem dados relevantes, porém ainda não transformam esses dados em decisões rápidas, priorização confiável e ações coordenadas entre áreas.
 
-## 3. Problema Central
+## 3. Baseline Observado no Dataset Olist
+
+O recorte disponível cobre compras entre setembro de 2016 e outubro de 2018 e permite validar parte relevante das hipóteses da Fase 1:
+
+- 99.441 pedidos de 96.096 clientes únicos; 96.478 pedidos foram entregues (97,0%);
+- 7.826 pedidos entregues chegaram após a data estimada (8,1% das entregas), com prazo médio de entrega de 12,6 dias;
+- 14,7% dos reviews receberam nota 1 ou 2, enquanto 57,8% receberam nota 5;
+- somente 41,3% dos reviews contêm comentário textual, o que limita a cobertura da análise semântica;
+- 3,1% dos clientes únicos têm mais de um pedido observado, logo recompra é um proxy histórico e não uma medida de churn em tempo real.
+
+O dataset não contém tracking de transportadoras, tickets, NPS, campanhas ou CRM. As conclusões devem, portanto, diferenciar o diagnóstico histórico suportado pela base de automações operacionais que dependerão de novas integrações.
+
+## 4. Problema Central
 
 O negócio provavelmente enfrenta uma combinação de cinco dores:
 
@@ -30,7 +42,7 @@ O negócio provavelmente enfrenta uma combinação de cinco dores:
 
 Em termos executivos, o problema não é apenas “falta de IA”, mas sim falta de uma camada inteligente de priorização, diagnóstico e apoio à ação.
 
-## 4. Hipóteses de Oportunidade
+## 5. Hipóteses de Oportunidade
 
 Com o dataset do Brazilian Ecommerce disponível como base analítica do projeto, é possível formular hipóteses de alto valor a partir dos dados reais de clientes, pedidos, logística e reviews:
 
@@ -40,9 +52,9 @@ Com o dataset do Brazilian Ecommerce disponível como base analítica do projeto
 - queda de retenção pode decorrer de experiências ruins logo nas primeiras interações;
 - equipes operacionais e gerenciais podem gastar tempo excessivo consolidando informação antes de agir.
 
-## 5. Análise Estratégica por Frente
+## 6. Análise Estratégica por Frente
 
-### 5.1 Clientes
+### 6.1 Clientes
 
 Questões-chave:
 
@@ -57,7 +69,7 @@ Valor esperado:
 - redução de perdas em contas relevantes;
 - foco em segmentos com maior retorno.
 
-### 5.2 Logística
+### 6.2 Logística
 
 Questões-chave:
 
@@ -73,7 +85,7 @@ Valor esperado:
 - menor custo de retrabalho e atendimento;
 - ganho de previsibilidade operacional.
 
-### 5.3 Reviews e Voz do Cliente
+### 6.3 Reviews e Voz do Cliente
 
 Questões-chave:
 
@@ -88,7 +100,7 @@ Valor esperado:
 - redução do tempo entre problema percebido e resposta da empresa;
 - melhoria de reputação e NPS.
 
-### 5.4 Retenção
+### 6.4 Retenção
 
 Questões-chave:
 
@@ -102,7 +114,7 @@ Valor esperado:
 - melhor uso de orçamento de retenção;
 - aumento de lifetime value.
 
-### 5.5 Eficiência Operacional
+### 6.5 Eficiência Operacional
 
 Questões-chave:
 
@@ -118,7 +130,7 @@ Valor esperado:
 - padronização de análises;
 - maior capacidade de escala.
 
-## 6. Benefícios Esperados
+## 7. Benefícios Esperados
 
 ### Benefícios para o negócio
 
@@ -141,7 +153,7 @@ Valor esperado:
 - rastreabilidade de hipóteses, riscos e ganhos;
 - base para investimento em Fase 2.
 
-## 7. Usuários Impactados
+## 8. Usuários Impactados
 
 ### Diretoria e liderança
 
@@ -163,7 +175,7 @@ Valor esperado:
 
 - usam a arquitetura proposta para evoluir métricas, monitoramento e automações futuras.
 
-## 8. Riscos e Limitações
+## 9. Riscos e Limitações
 
 ### Riscos de negócio
 
@@ -177,6 +189,9 @@ Valor esperado:
 - reviews sem qualidade suficiente para análise semântica robusta;
 - histórico incompleto para retenção;
 - granularidade insuficiente em eventos logísticos.
+- ausência de fontes operacionais necessárias para alertas em tempo real;
+- duplicidade potencial de `review_id` e `order_id` nos reviews;
+- necessidade de usar `customer_unique_id`, e não `customer_id`, em análises de recompra.
 
 ### Riscos operacionais
 
@@ -191,7 +206,7 @@ Valor esperado:
 - uso inadequado de dados sensíveis;
 - falta de trilha de auditoria.
 
-## 9. Recomendações Executivas
+## 10. Recomendações Executivas
 
 1. começar por casos de uso com impacto claro e disponibilidade de dados;
 2. definir indicadores de sucesso antes da implementação;
@@ -199,7 +214,7 @@ Valor esperado:
 4. garantir dono de negócio para cada agente;
 5. evoluir por ondas: diagnóstico, piloto controlado e expansão.
 
-## 10. Critérios de Priorização para a Fase 2
+## 11. Critérios de Priorização para a Fase 2
 
 Os casos de uso devem ser priorizados segundo:
 
@@ -209,26 +224,28 @@ Os casos de uso devem ser priorizados segundo:
 - simplicidade de integração ao processo atual;
 - capacidade de medir resultado rapidamente.
 
-## 11. Indicadores Executivos Recomendados
+## 12. Indicadores Executivos Recomendados
 
 - taxa de atraso logístico;
 - tempo médio de resolução de exceções;
 - volume e severidade de reviews negativos;
-- taxa de recompra ou retenção;
-- churn por segmento;
+- taxa de pedidos entregues após a data estimada;
+- taxa de reviews com nota 1 ou 2;
+- taxa de recompra por `customer_unique_id`;
+- churn por segmento, quando houver base CRM longitudinal;
 - tempo gasto em consolidação analítica;
 - taxa de adoção das recomendações dos agentes.
 
-## 12. Próximos Passos Imediatos
+## 13. Próximos Passos Imediatos
 
-1. validar a estrutura do dataset disponível e o dicionário de dados;
-2. mapear as fontes por domínio: clientes, pedidos, logística, reviews e CRM;
-3. validar com as áreas as dores prioritárias;
+1. formalizar as métricas e chaves descritas no inventário de dados;
+2. priorizar o diagnóstico de atraso e reviews negativos, já mensuráveis na base;
+3. validar com as áreas as dores prioritárias e as ações possíveis;
 4. selecionar um piloto de maior valor;
-5. definir baseline dos indicadores antes da execução da Fase 2.
+5. integrar tracking, atendimento e CRM antes de propor alertas operacionais ou retenção em tempo real.
 
-## 13. Conclusão
+## 14. Conclusão
 
 A oportunidade da Fase 1 é criar base decisória para usar IA com foco real em negócio. O maior ganho esperado não é apenas automação, mas capacidade de transformar dados dispersos em priorização prática, resposta mais rápida e melhoria contínua da experiência do cliente e da operação.
 
-Com o dataset e a documentação base disponíveis no projeto, este relatório deve ser entendido como a versão executiva inicial, pronta para ser refinada com evidências quantitativas e validação do contexto operacional real.
+Com o dataset completo disponível, este relatório passa a ter um baseline quantitativo para orientar o piloto. A validação do contexto operacional atual e a integração de fontes ausentes continuam necessárias antes de escalar recomendações para execução.

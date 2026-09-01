@@ -7,7 +7,7 @@ Os agentes abaixo foram desenhados para resolver dores centrais do enunciado e a
 ## Agente 1 — Analista de Voz do Cliente
 
 **Objetivo**  
-Transformar reviews, tickets e feedbacks em temas priorizados, causas prováveis e alertas acionáveis.
+Transformar notas e comentários de reviews em temas priorizados, causas prováveis e alertas analíticos.
 
 **Problema que resolve**  
 A empresa recebe sinais dispersos de insatisfação, mas não converte esse volume em diagnóstico estruturado e priorização rápida.
@@ -23,12 +23,12 @@ CX, atendimento, produto, operações e liderança.
 - apoio à priorização interáreas.
 
 **Dependências de dados**  
-reviews, tickets, NPS, pesquisas e histórico de interações.
+reviews e notas por pedido. Tickets, NPS, pesquisas e histórico de interações precisam ser integrados para ampliar a cobertura.
 
 ## Agente 2 — Orquestrador de Exceções Logísticas
 
 **Objetivo**  
-Monitorar eventos logísticos, identificar desvios e recomendar ações para reduzir impacto no cliente e na operação.
+Analisar o ciclo histórico dos pedidos, identificar desvios de prazo e recomendar prioridades de investigação.
 
 **Problema que resolve**  
 Falhas logísticas costumam ser detectadas tarde, com reação manual e baixa visibilidade de causa-raiz.
@@ -44,12 +44,12 @@ operações, logística, atendimento e gestores de SLA.
 - aumento de previsibilidade.
 
 **Dependências de dados**  
-pedidos, tracking, SLA, transportadoras, ocorrência de devolução e contatos de suporte.
+pedidos, datas de entrega estimada e realizada, itens, vendedores e localização. Tracking, transportadoras, devoluções e contatos de suporte não estão disponíveis na base atual.
 
 ## Agente 3 — Guardião de Retenção e Churn
 
 **Objetivo**  
-Detectar sinais de risco de churn ou queda de recompra e sugerir ações de retenção com base em perfil, histórico e eventos recentes.
+Identificar perfis com baixa recompra observada e experiências negativas, gerando hipóteses para retenção.
 
 **Problema que resolve**  
 Perdas de clientes são percebidas tarde, quando o custo de recuperação já é maior ou a reversão se torna improvável.
@@ -64,7 +64,7 @@ CRM, comercial, sucesso do cliente e liderança de receita.
 - aumento de retenção e lifetime value.
 
 **Dependências de dados**  
-histórico transacional, frequência de compra, engajamento, reclamações, atendimento e campanhas.
+histórico transacional, frequência de compra e reviews. Engajamento, atendimento e campanhas exigem fontes externas; `customer_unique_id` é a chave para a frequência de compra.
 
 ## Agente 4 — Copiloto Executivo de Eficiência
 
@@ -89,16 +89,16 @@ saídas dos demais agentes, KPIs executivos e metas operacionais.
 
 ## Priorização Recomendada
 
-### Onda 1
+### Onda 1 — dados já disponíveis
 
 - Analista de Voz do Cliente
 - Orquestrador de Exceções Logísticas
 
-### Onda 2
+### Onda 2 — após validação do proxy histórico
 
 - Guardião de Retenção e Churn
 
-### Onda 3
+### Onda 3 — após integração das saídas e metas
 
 - Copiloto Executivo de Eficiência
 
@@ -109,3 +109,4 @@ saídas dos demais agentes, KPIs executivos e metas operacionais.
 - melhoria dos indicadores-alvo;
 - confiança nas recomendações;
 - qualidade de governança e rastreabilidade.
+- cobertura e qualidade das fontes necessárias para cada recomendação.
