@@ -6,9 +6,9 @@ Entregáveis da Fase 1 para análise estratégica, planejamento executivo e dese
 
 - `data/` — arquivos canônicos do dataset Brazilian Ecommerce (Olist)
 - `data/README.md` — inventário, relacionamentos e limitações dos dados
-- `docs/relatorio_executivo_fase1.md`
-- `docs/mapa_agentes_ia.md`
-- `docs/arquitetura_conceitual_inicial.md`
+- `docs/relatorio_executivo_fase1.md` e `docs/relatorio_executivo_fase1.docx`
+- `docs/mapa_agentes_ia.md` e `docs/mapa_agentes_ia.drawio`
+- `docs/arquitetura_conceitual_inicial.md` e `docs/arquitetura_conceitual_inicial.drawio`
 - `docs/prompts_iniciais_agentes.md`
 - `docs/roteiro_video_executivo.md`
 
