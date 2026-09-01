@@ -32,7 +32,7 @@ Em termos executivos, o problema não é apenas “falta de IA”, mas sim falta
 
 ## 4. Hipóteses de Oportunidade
 
-Mesmo sem o dataset anexado ao repositório, o enunciado já permite formular hipóteses de alto valor:
+Com o dataset do Brazilian Ecommerce disponível como base analítica do projeto, é possível formular hipóteses de alto valor a partir dos dados reais de clientes, pedidos, logística e reviews:
 
 - clientes insatisfeitos podem estar concentrados em jornadas específicas;
 - atrasos logísticos podem estar associados a regiões, transportadoras, categorias ou períodos;
@@ -221,7 +221,7 @@ Os casos de uso devem ser priorizados segundo:
 
 ## 12. Próximos Passos Imediatos
 
-1. confirmar o dataset disponível e o dicionário de dados;
+1. validar a estrutura do dataset disponível e o dicionário de dados;
 2. mapear as fontes por domínio: clientes, pedidos, logística, reviews e CRM;
 3. validar com as áreas as dores prioritárias;
 4. selecionar um piloto de maior valor;
@@ -231,4 +231,4 @@ Os casos de uso devem ser priorizados segundo:
 
 A oportunidade da Fase 1 é criar base decisória para usar IA com foco real em negócio. O maior ganho esperado não é apenas automação, mas capacidade de transformar dados dispersos em priorização prática, resposta mais rápida e melhoria contínua da experiência do cliente e da operação.
 
-Sem o dataset no repositório, a recomendação é tratar este documento como a versão executiva inicial, pronta para ser refinada com evidências quantitativas assim que os dados forem disponibilizados.
+Com o dataset e a documentação base disponíveis no projeto, este relatório deve ser entendido como a versão executiva inicial, pronta para ser refinada com evidências quantitativas e validação do contexto operacional real.
