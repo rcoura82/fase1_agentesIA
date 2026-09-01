@@ -54,7 +54,7 @@ Com o dataset do Brazilian Ecommerce disponível como base analítica do projeto
 
 ## 6. Análise Estratégica por Frente
 
-### 5.1 Clientes
+### 6.1 Clientes
 
 Questões-chave:
 
@@ -69,7 +69,7 @@ Valor esperado:
 - redução de perdas em contas relevantes;
 - foco em segmentos com maior retorno.
 
-### 5.2 Logística
+### 6.2 Logística
 
 Questões-chave:
 
@@ -85,7 +85,7 @@ Valor esperado:
 - menor custo de retrabalho e atendimento;
 - ganho de previsibilidade operacional.
 
-### 5.3 Reviews e Voz do Cliente
+### 6.3 Reviews e Voz do Cliente
 
 Questões-chave:
 
@@ -100,7 +100,7 @@ Valor esperado:
 - redução do tempo entre problema percebido e resposta da empresa;
 - melhoria de reputação e NPS.
 
-### 5.4 Retenção
+### 6.4 Retenção
 
 Questões-chave:
 
@@ -114,7 +114,7 @@ Valor esperado:
 - melhor uso de orçamento de retenção;
 - aumento de lifetime value.
 
-### 5.5 Eficiência Operacional
+### 6.5 Eficiência Operacional
 
 Questões-chave:
 

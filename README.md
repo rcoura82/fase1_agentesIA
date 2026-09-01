@@ -4,13 +4,13 @@ Entregáveis da Fase 1 para análise estratégica, planejamento executivo e dese
 
 ## Estrutura
 
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/data/` — arquivos canônicos do dataset Brazilian Ecommerce (Olist)
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/data/README.md` — inventário, relacionamentos e limitações dos dados
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/docs/relatorio_executivo_fase1.md`
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/docs/mapa_agentes_ia.md`
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/docs/arquitetura_conceitual_inicial.md`
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/docs/prompts_iniciais_agentes.md`
-- `/home/runner/work/fase1_agentesIA/fase1_agentesIA/docs/roteiro_video_executivo.md`
+- `data/` — arquivos canônicos do dataset Brazilian Ecommerce (Olist)
+- `data/README.md` — inventário, relacionamentos e limitações dos dados
+- `docs/relatorio_executivo_fase1.md`
+- `docs/mapa_agentes_ia.md`
+- `docs/arquitetura_conceitual_inicial.md`
+- `docs/prompts_iniciais_agentes.md`
+- `docs/roteiro_video_executivo.md`
 
 ## Dataset disponível
 
