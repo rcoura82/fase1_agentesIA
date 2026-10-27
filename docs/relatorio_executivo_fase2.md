@@ -2,7 +2,7 @@
 
 > Evolução do relatório da Fase 1. A Parte A resume o que mudou; a Parte B detalha agentes, jornadas, prompts e vídeo; a Parte C preserva integralmente o relatório da Fase 1 como base.
 
-**Vídeo executivo (4 min 57 s):** [Assistir ao vídeo](https://github.com/user-attachments/assets/983ade2d-b182-42a8-a866-b247fa873a29) — roteiro em `docs/roteiro_video_executivo.md`.
+**Vídeo executivo (5 min 7 s):** [Assistir ao vídeo](apresentacao_fase2.mp4) — roteiro em `docs/roteiro_video_executivo.md`.
 
 ## Parte A — Evolução em relação à Fase 1
 
@@ -188,7 +188,7 @@ Apresentação de até 5 minutos para os executivos que aprovarão o investiment
 5. Exemplo de interação com um prompt (45 s);
 6. Pedido de decisão: aprovar o piloto da Onda 1 (30 s).
 
-**Link:** [Assistir ao vídeo](https://github.com/user-attachments/assets/983ade2d-b182-42a8-a866-b247fa873a29)
+**Link:** [Assistir ao vídeo](apresentacao_fase2.mp4)
 
 ### 7. Plano de piloto e critérios de sucesso
 
