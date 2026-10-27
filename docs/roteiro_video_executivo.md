@@ -74,3 +74,12 @@ Mensagem principal:
 - falar em impacto, risco e prioridade;
 - mostrar que a abordagem é incremental e controlada;
 - encerrar com decisão esperada da diretoria: validar prioridade, piloto e critérios de sucesso.
+
+## Atualização Fase 2 (até 5 minutos)
+
+1. Evolução Fase 1 → Fase 2 (30 s);
+2. Evidência: pedidos atrasados têm 54,1% de reviews 1–2 contra 9,2% no prazo (45 s);
+3. Os 3 agentes: objetivo, problema, dados e KPIs (90 s);
+4. Jornadas: gatilho, decisão, interação humana e saída (60 s);
+5. Exemplo de interação com os prompts (45 s);
+6. Decisão pedida: aprovar o piloto da Onda 1 (30 s).
